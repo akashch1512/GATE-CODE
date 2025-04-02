@@ -32,8 +32,33 @@ class Stack:
             values += f"| {value} |\n" + " ====\n"
         return values
 
+    def __iter__(self):
+        StackIterator(self.stack)
+        
+
+    
+class StackIterator:
+    def __init__(self, stack):
+        self.stack = stack
+                        
+    def __iter__(self):
+        self.index = len(self.stack) - 1
+        return self
+    
+    def __next__(self):
+        if self.index >= 0:
+            ele = self.stack[self.index]
+            self.index -= 1
+            return ele
+        raise StopIteration
+        
     
 stack = Stack()
 for value in range(10):
     stack.push(value)
-print(stack)
+
+for value in stack:
+    print(value)
+    
+for value in stack:
+    print(value)    
