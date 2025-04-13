@@ -1,0 +1,23 @@
+📘 Resources You Should Use:
+NPTEL: Artificial Intelligence – Prof. Mausam (IIT Delhi)
+🔗 Has both theory and intuitive examples — very GATE-focused.
+
+GATE AI Book – Ravindrababu Ravula / Made Easy Notes
+Good for fast revision after you study concepts.
+
+GeeksforGeeks / Brilliant.org / TutorialsPoint
+For specific logic or probability topics with examples.
+
+Previous Year GATE DA Questions
+Solve 3–5 per topic after studying. Build your instinct.
+
+
+
+🧩 Tips to Stay Efficient:
+🎯 One topic a day rule — e.g., today: BFS + practice + 1 video + 2 questions.
+
+✍️ Make your own cheat-sheet after each topic (helps more than notes).
+
+🧪 Try tiny simulations (draw trees, search steps, etc.) to make it stick.
+
+💤 Don’t waste time on college definitions unless they're useful for understanding.
