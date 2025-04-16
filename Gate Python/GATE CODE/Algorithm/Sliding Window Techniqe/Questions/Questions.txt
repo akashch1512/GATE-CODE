@@ -1,0 +1,11 @@
+📘 Common Question Types in GATE:
+
+Find maximum/minimum sum of a subarray of size k
+
+Count occurrences of a pattern in a string
+
+Longest substring with at most K distinct characters
+
+Maximum of all subarrays of size k
+
+Binary array questions: max length of subarray with sum = k

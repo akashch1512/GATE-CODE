@@ -1,0 +1,29 @@
+1. Core Concepts to Master
+
+What is an array? (Contiguous memory, fixed size) ✅
+
+Time complexity for operations: access, search, insert, delete ✅
+
+Python implementation using list (but also know C-style behavior for GATE) ✅
+
+Difference between Array vs List vs Linked List ✅
+
+
+
+🧠 2. Must-Know GATE Concepts
+
+Array rotation (left/right) ✅
+
+Prefix sum, difference array ✅
+
+Sliding window technique
+
+Maximum subarray (Kadane’s Algorithm)
+
+Two pointer technique
+
+Searching (Binary Search logic within arrays)
+
+Matrix as 2D Array (Transpose, Rotate, Diagonal traversal)
+
+In-place operations (reverse, swap)

@@ -1,0 +1,118 @@
+🔰 Level 1 – Easy
+Q1. Left Rotation
+Write a function that performs a left rotation on array A = [1, 2, 3, 4, 5] by 2 positions.
+👉 Output should be: [3, 4, 5, 1, 2]
+
+Q2. Right Rotation
+Rotate array A = [10, 20, 30, 40, 50] right by 3.
+👉 Output should be: [30, 40, 50, 10, 20]
+
+⚙️ Level 2 – Moderate
+Q3. Rotation by k > n
+Given array A = [1, 2, 3, 4, 5, 6], rotate it left by k = 8.
+👉 Output?
+
+🧠 Hint: What if k > length of array?
+
+Q4. Rotated Sorted Array Search
+You have a sorted array rotated at unknown position:
+A = [40, 50, 60, 10, 20, 30]
+Search for the element 10.
+
+👉 Return its index (like you'd do in binary search).
+
+🧠 Level 3 – GATE-Style Logical
+Q5. Rotated Array Trick MCQ
+Array A = [1, 2, 3, 4, 5, 6, 7] is left rotated by 3 positions.
+What is the element at index 4 of the new array?
+
+Options:
+a) 5
+b) 6
+c) 7
+d) 1
+
+Q6. Circular Rotation Sum
+You're given an array A = [1, 2, 3, 4].
+If the array is rotated right k times (k = 1 to 4), find the sum of all first elements after each rotation.
+
+👉 Example:
+
+Rotate by 1 → [4, 1, 2, 3] → first element = 4
+
+Rotate by 2 → [3, 4, 1, 2] → first = 3
+
+... and so on
+
+🎯 Total sum = ?
+
+
+
+
+# Hints
+
+🔰 Level 1 – Easy
+Q1. Left Rotation
+Naive approach:
+
+Time Complexity: O(n * d)
+
+You loop through the array d times, and for each rotation, you shift elements one by one.
+
+Efficient approach (Reversal Algorithm):
+
+Time Complexity: O(n)
+
+You reverse three parts of the array: the first d elements, the rest of the array, and the entire array.
+
+Q2. Right Rotation
+Naive approach:
+
+Time Complexity: O(n * d)
+
+Efficient approach (Reversal Algorithm):
+
+Time Complexity: O(n)
+
+⚙️ Level 2 – Moderate
+Q3. Rotation by k > n
+Time Complexity: O(n)
+
+First, reduce k by k % n (where n is the length of the array), as rotating by n results in the same array. After this, use the reversal algorithm for the rotation, which takes O(n).
+
+Q4. Rotated Sorted Array Search
+Time Complexity: O(log n)
+
+You can use Binary Search on a rotated sorted array. The rotation introduces two sorted halves. You can search in one half and discard the other half, which gives a logarithmic time complexity.
+
+🧠 Level 3 – GATE-Style Logical
+Q5. Rotated Array Trick MCQ
+Time Complexity: O(1)
+
+This is a simple mathematical problem where you can directly calculate the new position of the element using modulo arithmetic. No need for a loop or extra work.
+
+Q6. Circular Rotation Sum
+Naive Approach:
+
+Time Complexity: O(n * k)
+
+You perform the rotation k times, and for each rotation, you sum the first element, which takes O(n) time.
+
+Optimized Approach (If we sum over rotations directly without performing them):
+
+Time Complexity: O(n)
+
+Since we’re rotating the array and taking the first element of each rotation, it’s enough to calculate the sum after a few rotations without physically rotating the array. You can use modulo to get the first element after each rotation.
+
+Summary of Time Complexities:
+Left Rotation (Q1): O(n) (Efficient)
+
+Right Rotation (Q2): O(n) (Efficient)
+
+Rotation by k > n (Q3): O(n)
+
+Rotated Sorted Array Search (Q4): O(log n)
+
+Rotated Array Trick MCQ (Q5): O(1)
+
+Circular Rotation Sum (Q6): O(n * k) or O(n) for optimized version
